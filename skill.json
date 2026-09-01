@@ -1,0 +1,41 @@
+{
+  "name": "genpark-event-driven-omnichannel-lifecycle-nudge-dispatcher-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Event-driven omnichannel customer lifecycle nudge dispatcher automating behavioral SMS, email, and push triggers.",
+  "author": "genpark",
+  "category": "marketing-automation",
+  "tags": [
+    "lifecycle-marketing",
+    "omnichannel-nudge",
+    "cart-abandonment",
+    "retention-automation",
+    "sms-push-dispatch"
+  ],
+  "inputs": {
+    "trigger_event": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    },
+    "discount_incentive_pct": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "nudge_dispatch_id": {
+      "type": "string"
+    },
+    "channels_dispatched": {
+      "type": "array"
+    },
+    "projected_recovery_conversion_rate_pct": {
+      "type": "number"
+    },
+    "lifecycle_workflow_graph_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
